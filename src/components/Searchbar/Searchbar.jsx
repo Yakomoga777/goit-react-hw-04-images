@@ -1,7 +1,7 @@
 import { Button } from 'components/Button/Button';
 import { ImageGallery } from 'components/ImageGallery/ImageGallery';
 
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import {
   StyleSearchbar,
   StyleSearchForm,
@@ -28,7 +28,6 @@ export const Searchbar = ({
     evt.preventDefault();
     const search = searchQuery.trim();
     onButtonSubmit(search);
-    console.log(evt);
   };
 
   const onClickLoadMore = searchQuery => {

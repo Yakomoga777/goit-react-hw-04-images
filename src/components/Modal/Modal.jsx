@@ -3,7 +3,6 @@ import { StyleBackdrop, StyleModal } from './Modal.styled';
 
 export class Modal extends Component {
   componentDidMount() {
-    console.log('Змонтувалася модалка');
     window.addEventListener('keydown', this.onKeyDown);
   }
   componentWillUnmount() {
@@ -21,21 +20,15 @@ export class Modal extends Component {
 
   onBackdropClick = evt => {
     if (evt.target.id === 'backDrop') {
-      // console.log('backdrop');
       this.props.onCloseModal();
     }
     return;
   };
   render() {
-    // const {  } = this.props;
     return (
-      <>
-        {
-          <StyleBackdrop id="backDrop" onClick={this.onBackdropClick}>
-            <StyleModal>{this.props.children}</StyleModal>
-          </StyleBackdrop>
-        }
-      </>
+      <StyleBackdrop id="backDrop" onClick={this.onBackdropClick}>
+        <StyleModal>{this.props.children}</StyleModal>
+      </StyleBackdrop>
     );
   }
 }
