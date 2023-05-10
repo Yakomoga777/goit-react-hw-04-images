@@ -25,7 +25,6 @@ export const App = () => {
     console.log('Did Mount');
   }, []);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     console.log('Did Update');
 

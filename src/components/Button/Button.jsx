@@ -3,7 +3,6 @@ import { StyledButton } from './Button.styled';
 
 export const Button = ({ onClick }) => {
   const onBtnClick = evt => {
-    console.log(evt);
     onClick();
   };
 

@@ -6,7 +6,6 @@ export class Modal extends Component {
     window.addEventListener('keydown', this.onKeyDown);
   }
   componentWillUnmount() {
-    console.log('Розмонтувалася модалка');
     window.removeEventListener('keydown', this.onKeyDown);
   }
 
