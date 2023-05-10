@@ -55,7 +55,7 @@ export const App = () => {
 
       fetchData();
     }
-  }, [searchQuery, page]);
+  }, [searchQuery, page, images]);
 
   const onSubmit = search => {
     setSearchQuery(search);
