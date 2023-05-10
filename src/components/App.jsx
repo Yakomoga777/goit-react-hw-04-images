@@ -18,6 +18,7 @@ export const App = () => {
   const [showLoadMoreBtn, setShowLoadMoreBtne] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [largeImageURL, setLargeImageURL] = useState('');
+
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
